@@ -74,30 +74,41 @@
   <div class="col-sm" style="text-align: center;">
     <input type="text" class="form-control" placeholder="Acción" aria-label=" Acción" readonly="">
   </div>
-  <table style="margin:auto">
-    <thead>
-        <tr>
-            <th>Desde</th>
-            <th>Hasta</th>
-            <th>Año</th>
-            <th>Reanuda labores</th>
-            <th>Dirección durante la ausencia</th>
-            <th>Teléfono</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><input type="text" name="desde[]" /></td>
-            <td><input type="text" name="hasta[]" /></td>
-            <td><input type="number" name="año[]" /></td>
-            <td><input type="text" name="Reanuda labores[]" /></td>
-            <td><input type="text" name="Dirección durante la ausencia[]" /></td>
-            <td><input type="number" name="Teléfono[]" /></td>
-        </tr>
-    </tbody>
+<h4>Registro de Vacaciones</h4>
+
+
+<h4>Solicitud de Beneficios</h4>
+<table>
+  <tr>
+    <th>Tipo de beneficio</th>
+    <th>Seleccionar</th>
+    <th>Monto</th>
+  </tr>
+  <tr>
+    <td>Aporte para gastos Oftalmológicos</td>
+    <td><input type="checkbox"  name="bono_oftalmologico"></td>
+  </tr>
+  <tr>
+    <td>Aporte para gastos dentales</td>
+    <td><input type="checkbox" name="bono_dental"></td>
+  </tr>
+  <tr>
+    <td>Aporte para gastos fúnebres</td>
+    <td><input type="checkbox" name="gastos_funebres"></td>
+  </tr>
+  <tr>
+    <td>Aporte para gastos por matrimonio</td>
+    <td><input type="checkbox" name="aporte_matrimonio"></td>
+  </tr>
+  <tr>
+    <td>Bono por vacaciones</td>
+    <td><input type="checkbox" name="aporte_vacaciones"></td>
+  </tr>
+  <tr>
+    <td>Bono educativo</td>
+    <td><input type="checkbox" name="bono_educativo"></td>
+  </tr>
 </table>
-
-
     <div class="mb-3">
       <h4>Documentos adjuntos</h4>
       <label for="formFileMultiple" class="form-label"></label>
