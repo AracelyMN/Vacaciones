@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="logo.jpeg" class="img-thumbna
+    il" alt="...">
+    <div class="row" style="text-align: center;">
+      <h3>ACCIONES DEL PERSONAL</h3>
+    </div>
+    <div class="row" style="text-align: center;">
+      <h4>Datos del Empleado</h4>
+    </div>
+    
+    <div class="row g-3" style="text-align: center;">
+      <div class="col-sm-3">
+        <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="N.completo" id="N.completo">
+      </div>
+      <div class="col-sm-3" style="text-align: center;">
+        <input type="text" class="form-control" placeholder="Número de Empleado" aria-label="Número" id="Num" disabled>
+      </div>
+      <div class="col-sm-6" style="text-align: center;">
+        <input type="text" class="form-control" placeholder="Fecha de ingreso" aria-label="F.ingreso" id="F.ingreso" disabled>
+      </div>
+    </div>
+    <br>
+    <h4>Puesto que ocupa en ALDESA</h4>
+    <div class="row g-3" style="text-align: center;">
+      <div class="col-sm">
+        <input type="text" class="form-control" placeholder="Puesto" aria-label="	Puesto" readonly="">
+      </div>
+      <div class="col-sm" style="text-align: center;">
+        <input type="text" class="form-control" placeholder="Departamento" aria-label="Departamento" readonly="">
+      </div>
+      <div class="col-sm" style="text-align: center;">
+        <input type="text" class="form-control" placeholder="Oficina" aria-label=" Oficina" readonly="">
+      </div>
+    </div>
+      <form>
+       <h4>Seleccione la acción</h4>
+            <select name="Acciones" class="Form-select" id="tipoAccion" >
+              <option value="1">Vacaciones</option>
+              <option value="2">Licencia con gose de sueldo</option>
+              <option value="3">Calamidad doméstica</option>
+              <option value="4">Incapacidad médica</option>
+              <option value="5">Licencia sin gose de sueldo</option>
+              <option value="6">Solicitud de beneficios</option>
+            </select>
+      </form>
+    <h4>Fecha de acción de un solo dia</h4>
+    <div class="col-sm" style="text-align: center;">
+      <input type="text" class="form-control" placeholder="Acción" aria-label=" Acción" readonly="">
+    </div>
+    <table style="margin:auto">
+      <thead>
+          <tr>
+              <th>Desde</th>
+              <th>Hasta</th>
+              <th>Año</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td><input type="text" name="desde[]" /></td>
+              <td><input type="text" name="hasta[]" /></td>
+              <td><input type="number" name="año[]" /></td>
+          </tr>
+      </tbody>
+  </table>
+  <h4>Fecha de acción de varios dias</h4>
+  <div class="col-sm" style="text-align: center;">
+    <input type="text" class="form-control" placeholder="Acción" aria-label=" Acción" readonly="">
+  </div>
+  <table style="margin:auto">
+    <thead>
+        <tr>
+            <th>Desde</th>
+            <th>Hasta</th>
+            <th>Año</th>
+            <th>Reanuda labores</th>
+            <th>Dirección durante la ausencia</th>
+            <th>Teléfono</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="text" name="desde[]" /></td>
+            <td><input type="text" name="hasta[]" /></td>
+            <td><input type="number" name="año[]" /></td>
+            <td><input type="text" name="Reanuda labores[]" /></td>
+            <td><input type="text" name="Dirección durante la ausencia[]" /></td>
+            <td><input type="number" name="Teléfono[]" /></td>
+        </tr>
+    </tbody>
+</table>
+
+
+    <div class="mb-3">
+      <h4>Documentos adjuntos</h4>
+      <label for="formFileMultiple" class="form-label"></label>
+      <input class="form-control" type="file" id="formFileMultiple" multiple>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary">Guardar</button >
+</body>
+</html>
