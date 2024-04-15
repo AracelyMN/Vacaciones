@@ -14,72 +14,28 @@
     <div class="row" style="text-align: center;">
       <h4>Datos del Empleado</h4>
     </div>
-    
     <div class="row g-3" style="text-align: center;">
       <div class="col-sm-3">
         <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="N.completo" id="N.completo">
       </div>
       <div class="col-sm-3" style="text-align: center;">
-        <input type="text" class="form-control" placeholder="Número de Empleado" aria-label="Número" id="Num" disabled>
+        <input type="text" class="form-control" placeholder="Número de Empleado" aria-label="Número" id="Num" readonly>
       </div>
-      <div class="col-sm-6" style="text-align: center;">
-        <input type="text" class="form-control" placeholder="Fecha de ingreso" aria-label="F.ingreso" id="F.ingreso" disabled>
-      </div>
-    </div>
+      <br>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Transmite</option>
+        <option value="1">Vacaciones</option>
+        <option value="2">Licencia</option>
+        <option value="3">Calamidad</option>
+        <option value="4">Incapacidad</option>
+        <option value="5">Beneficio</option>
+      </select>
     <br>
-    <h4>Puesto que ocupa en ALDESA</h4>
-    <div class="row g-3" style="text-align: center;">
-      <div class="col-sm">
-        <input type="text" class="form-control" placeholder="Puesto" aria-label="	Puesto" readonly="">
-      </div>
-      <div class="col-sm" style="text-align: center;">
-        <input type="text" class="form-control" placeholder="Departamento" aria-label="Departamento" readonly="">
-      </div>
-      <div class="col-sm" style="text-align: center;">
-        <input type="text" class="form-control" placeholder="Oficina" aria-label=" Oficina" readonly="">
-      </div>
-    </div>
-      <form>
-       <h4>Seleccione la acción</h4>
-            <select name="Acciones" class="Form-select" id="tipoAccion" >
-              <option value="1">Vacaciones</option>
-              <option value="2">Licencia con gose de sueldo</option>
-              <option value="3">Calamidad doméstica</option>
-              <option value="4">Incapacidad médica</option>
-              <option value="5">Licencia sin gose de sueldo</option>
-              <option value="6">Solicitud de beneficios</option>
-            </select>
-      </form>
-    <h4>Fecha de acción de un solo dia</h4>
-    <div class="col-sm" style="text-align: center;">
-      <input type="text" class="form-control" placeholder="Acción" aria-label=" Acción" readonly="">
-    </div>
-    <table class="Acciones" style="margin:auto">
-      <thead>
-          <tr>
-              <th>Desde</th>
-              <th>Hasta</th>
-              <th>Año</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td><input type="text" name="desde[]" /></td>
-              <td><input type="text" name="hasta[]" /></td>
-              <td><input type="number" name="año[]" /></td>
-          </tr>
-      </tbody>
-  </table>
-  <h4>Fecha de acción de varios dias</h4>
-  <div class="col-sm" style="text-align: center;">
-    <input type="text" class="form-control" placeholder="Acción" aria-label=" Acción" readonly="">
-  </div>
-<h4>Solicitud de Beneficio</h4>
 <table>
   <tr>
-    <th>Tipo de beneficio</th>
-    <th>Seleccionar</th>
-    <th>Monto</th>
+    <th>Beneficio</th>
+    <th>Monto Asignado</th>
+    <th>Monto Aplicado</th>
   </tr>
   <tr>
     <td>Aporte para gastos Oftalmológicos</td>
@@ -106,6 +62,9 @@
     <td><input type="checkbox" name="bono_educativo"></td>
   </tr>
 </table>
-    <button type="button" class="btn btn-primary">Guardar</button>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button">Guardar</button>
+  <button class="btn btn-primary" type="button">Salir</button>
+</div>
 </body>
 </html>
