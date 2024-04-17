@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-  </head>
   <body>
   <img src="logo.jpeg" class="img-thumbna
     il"alt="...">
@@ -30,20 +28,27 @@
         </tr>
         <tr>
           <td></td>
-        </tr>
+        </tr> 
       <br>
       </table>
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Tramite</option>
-        <option value="1">Vacaciones</option>
-        <option value="2">Licencia</option>
-        <option value="3">Calamidad</option>
-        <option value="4">Incapacidad</option>
-        <option value="5">Beneficio</option>
-      </select>
-    <br>
-<table>
-  <tr>
+        <h4>Selecciona Tramite:</h4>
+        <select id="Tramite">
+            <option value="vacaciones">vacaciones</option>
+            <option value="Licencia">Licencia</option>
+            <option value="Calamidad">Calamidad</option>
+            <option value="Incapacidad">Incapacidad</option>
+            <option value="Beneficio">Beneficio</option>
+        </select>
+        <br>
+        <br>
+    <div class="form-group row">
+      <div class="col-sm-7">
+        <input type="text" class="form-control" name="observaciones" id="observacionesCuentaPendiente"
+          placeholder="Observaciones">
+      </div>
+  <br>
+      <tr>
+    <table>
     <th>Beneficio</th>
     <th>Seleccionar</th>
     <th>Monto Asignado</th>
@@ -73,7 +78,6 @@
     <td>Bono educativo</td>
     <td><input class="form-check-input" type="checkbox" value=""name="bono_educativo"></td>
   </tr>
-  <tr>
 </table>
 <br>
 <div class="row" style="text-align: center;">
