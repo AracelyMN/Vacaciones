@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
   <img src="logo.jpeg" class="img-thumbna
-    il" alt="...">
+    il"alt="...">
     <div class="row" style="text-align: center;">
       <h3>ACCIONES DEL PERSONAL</h3>
     </div>
     <div class="row" style="text-align: center;">
       <h4>Datos del Empleado</h4>
     </div>
-    <div class="row g-3" style="text-align: center;">
+    <div class="row" style="text-align: center;">
       <div class="col-sm-3">
         <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="N.completo" id="N.completo">
       </div>
@@ -45,38 +45,40 @@
 <table>
   <tr>
     <th>Beneficio</th>
+    <th>Seleccionar</th>
     <th>Monto Asignado</th>
     <th>Monto Aplicado</th>
   </tr>
   <tr>
     <td>Aporte para gastos Oftalmológicos</td>
-    <td><name="bono_oftalmologico"></td>
+    <td><input class="form-check-input" type="checkbox" value=""name="bono_oftamologo"></td>
   </tr>
   <tr>
     <td>Aporte para gastos dentales</td>
-    <td><name="bono_dental"></td>
+    <td><input class="form-check-input" type="checkbox" value=""name="bono_dental"></td>
   </tr>
   <tr>
     <td>Aporte para gastos fúnebres</td>
-    <td><name="gastos_funebres"></td>
+    <td><input class="form-check-input" type="checkbox" value=""name="gastos_funebres"></td>
   </tr>
   <tr>
     <td>Aporte para gastos por matrimonio</td>
-    <td><name="aporte_matrimonio"></td>
+    <td><input class="form-check-input" type="checkbox" value=""name="aporte_matrimonio"></td>
   </tr>
   <tr>
     <td>Bono por vacaciones</td>
-    <td><name="aporte_vacaciones"></td>
+    <td><input class="form-check-input" type="checkbox" value=""name="aporte_vacaciones"></td>
   </tr>
   <tr>
     <td>Bono educativo</td>
-    <td><name="bono_educativo"></td>
+    <td><input class="form-check-input" type="checkbox" value=""name="bono_educativo"></td>
   </tr>
   <tr>
 </table>
-<div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button">Guardar</button>
-  <button class="btn btn-primary" type="button">Salir</button>
+<br>
+<div class="row" style="text-align: center;">
+<button class="btn btn-primary" type="button">Guardar</button>
+<button type="btn btn-primary"  type="button">Salir</button>
 </div>
 </body>
 </html>
