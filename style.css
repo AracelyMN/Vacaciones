@@ -53,6 +53,8 @@ td input[type="checkbox"] {
   margin-right: 10px;
 }
 
-
+.table td, .table th {
+  text-align: center;
+}
 
 
