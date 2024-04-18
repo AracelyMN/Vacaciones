@@ -31,7 +31,7 @@ table, th, td {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #bebdc4;
   margin: 0;
   padding: 0;
 }
@@ -40,7 +40,7 @@ table {
   width: 40%;
   margin: 50px auto;
   border-collapse: collapse;
-  border: 1px solid #fff;
+  border: 1px solid #fdfdfd;
   background-color: #fff;
 }
 
@@ -62,5 +62,6 @@ td input[type="checkbox"] {
 .table td, .table th {
   text-align: center;
 }
+
 
 
